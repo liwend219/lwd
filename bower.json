@@ -1,0 +1,33 @@
+{
+  "name": "bz_web",
+  "description": "baozheng webside",
+  "main": "main.js",
+  "authors": [
+    "wang youxun <youxun.wang@ichezheng.com>"
+  ],
+  "license": "ISC",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "fullpage.js": "fullpage#^2.9.4",
+    "animate.css": "daneden/animate.css#^3.5.2",
+    "textillate": "^0.4.0"
+  },
+  "exportsOverride": {
+    "jquery": {
+      "js": "dist/jquery.min.js"
+    }
+  },
+  "devDependencies": {
+    "fullpage.js": "fullpage#^2.9.5"
+  }
+}

@@ -1,0 +1,154 @@
+
+@keyframes FadeIn {
+    0% { opacity:0;}
+    50% { opacity:0.5;}
+    80% { opacity:1;}
+}
+@keyframes float {
+    0% {margin-top: 0px;}
+    50%{margin-top:5px;}
+    100% {margin-top:0px;}
+}
+.FadeIn {
+    opacity: 0;
+    animation: FadeIn 3.0s 1 linear;
+    opacity: 1;
+    /* display: block; */
+}
+
+#content {
+    text-align: center;
+}
+
+.top {
+    position:fixed;
+    width:100%;
+    height:8vh;
+    background: #333437;
+    line-height: 8vh;
+    top:0;
+    z-index: 100;
+}
+.resume-down {
+    width:10vw;
+    height:100%;
+    color:rgb(91, 69, 189);
+    font-size:0.7em;
+    display:inline-block;
+    text-align:center;
+    text-decoration:none;
+}
+.top-meun {
+    float:right;
+    display:inline-block;
+    width:20%;
+    text-align:center;
+    height:100%;
+    text-decoration:none;
+    color:#FFF;
+    font-size:0.7em;
+    transition: 300ms;
+}
+.activeColor {
+    color:#3058bb;
+    transition: 300ms;
+}
+.page1 {
+    background-color: #ff8960;
+}
+.page1-down {
+    animation: float 1s infinite linear;
+    font-size:28px;
+    position:absolute;
+    width:3vw;
+    height:3vw;
+    background-color:#010001;
+    left:50%;
+    margin-left:-25px;
+    top:85vh;
+    /* bottom: 10vh; */
+    border-radius:50px;
+    text-align: center;
+}
+.page1-down:hover {
+    background-color: #238bf3;
+    transition: 800ms;
+    cursor: pointer;
+}
+.page1-down-i {
+    width:1vw;
+    height:1vw;
+    margin: 0 auto;
+    transform:rotate(-45deg);
+    border-left:2px solid #fff; 
+    border-bottom:2px solid #fff;
+    margin-top: 8px;
+    background-color: transparent;
+}
+.toggleShow {
+    display: block;
+}
+.page1-pic {
+    /* opacity: 0; */
+    /* display: none; */
+    width:13vw;
+    height:13vw;
+    border-radius: 13vw;
+    background: rebeccapurple;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.page2 {
+    background-color: #6C7B8B;
+}
+.page2-1 {
+    margin: 0 auto;
+}
+.page2-zxt {
+    width:45vw;height:50vh;display:inline-block;
+}
+.page2-ldt {
+    width:33vw;height:50vh;display:inline-block;
+}
+.page3 {
+    background-color: #ccc;
+}
+.page3-time {
+    position:absolute;left:20px;bottom:5px;
+}
+.page4 {
+    background-color: #90ffdd;
+}
+.page4-item {
+    display:inline-block;
+    box-shadow: 10px 10px 5px #888888;
+    vertical-align:middle;
+    padding:20px;
+    border-radius:15px;
+    width:30vw;
+    height:40vh;
+    background:rgb(242, 240, 245);
+}
+.page4-item-title {
+    font-size:.6em;
+    color:#1a1d1a;
+}
+.page5 {
+
+}
+.other {
+    display:inline-block;width:40px;height:40px;margin:20px;
+}
+/* .other-hover1:hover {
+    animation: float 1s infinite linear;
+}
+.other-hover2:hover {
+    animation: float 1s infinite linear;
+}
+.other-hover3:hover {
+    animation: float 1s infinite linear;
+}
+.other-hover4:hover {
+    animation: float 1s infinite linear;
+} */
