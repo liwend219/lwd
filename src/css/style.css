@@ -112,7 +112,7 @@
     width:33vw;height:50vh;display:inline-block;
 }
 .page3 {
-    background-color: #ccc;
+    background-color: rgb(141, 140, 140);
 }
 .page3-time {
     position:absolute;left:20px;bottom:5px;
@@ -152,3 +152,41 @@
 .other-hover4:hover {
     animation: float 1s infinite linear;
 } */
+.time-pic {
+    position:absolute;
+    width:4vw;
+    height:4vw;
+    border-radius:4vw;
+    left:50%;
+    margin-left:-2vw;
+}
+.time-content {
+    position:absolute;
+    width:35vw;
+    height:25vh;
+    border-radius:8px;
+    background:rgb(220, 220, 233);
+    text-align: center;
+    font-family:黑体;
+}
+.time-content-1 {
+    position:relative;
+    width:100%;
+    height:100%;
+    color:rgb(65, 61, 57);
+}
+.time-content-time {
+    position:absolute;
+    left:10px;
+    font-size:.8em;
+    bottom:20px;
+}
+.xian {
+    position:relative;
+    width:0.2vw;
+    height:95vh;
+    background: #333633;
+    left:50%;
+    margin-left:-0.1vw;
+    text-align: center;
+}
