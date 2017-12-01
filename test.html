@@ -5,121 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        .xian {
-            position:relative;
-            width:0.2vw;
-            height:95vh;
-            background: #333633;
-            left:50%;
-            margin-left:-0.1vw;
-            text-align: center;
-        }
-        body {
-            background: rgb(141, 140, 140)
-        }
-        .time-pic {
-            position:absolute;
-            width:4vw;
-            height:4vw;
-            border-radius:4vw;
-            left:50%;
-            margin-left:-2vw;
-        }
-        .time-content {
-            position:absolute;
-            width:35vw;
-            height:25vh;
-            border-radius:8px;
-            background:rgb(220, 220, 233);
-            text-align: center;
-            font-family:黑体;
-        }
-        .time-content-1 {
-            position:relative;
-            width:100%;
-            height:100%;
-            color:rgb(116, 114, 111);
-        }
-        .time-content-time {
-            position:absolute;
-            left:10px;
-            font-size:.8em;
-            bottom:20px;
-        }
-    </style>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script> -->
+    <link href="./bower_components/textillate/assets/animate.css" rel="stylesheet">
+    <script src="./bower_components/textillate/jquery.textillate.js"></script>
+    
+    
+    <script src="./bower_components/textillate/assets/jquery.fittext.js"></script>
+    <script src="./bower_components/textillate/assets/jquery.lettering.js"></script>
 </head>
 <body>
-    <div>
-        <div class="xian">
-            
-        </div>
-        <!-- 1 -->
-        <div class="time-pic" style="background:rgb(192, 192, 183);top:10vh;">
-            <img src="./src/image/time.png" style="width:100%;height:100%;" alt="">
-        </div>
-        <div class="time-content" style="left:8%;top:10vh;">
-            <div class="time-content-1">
-                <div style="margin:10px;">
-                    <span style="font-size:.9em;">
-                        <b>初中</b>
-                    </span>
-                    <br>
-                    <span style="font-size:.7em;">安徽省岳西县白帽中学</span>
-                    <br>
-                    <p style="font-size:.7em">
-                        主修初中课程
-                    </p>
-                    <span class="time-content-time">
-                        2009.9-2012.6
-                    </span>
-                </div>
-            </div>
-        </div>
-        <!-- 2 -->
-        <div class="time-pic" style="background:rgb(223, 161, 70);top:40vh;">
-            <img src="./src/image/time.png" style="width:100%;height:100%;" alt="">
-        </div>
-        <div class="time-content" style="right:8%;top:40vh;">
-            <div class="time-content-1">
-                <div style="margin:10px;">
-                    <span style="font-size:.9em;">
-                        <b>高中</b>
-                    </span>
-                    <br>
-                    <span style="font-size:.7em;">安徽省岳西县店前中学</span>
-                    <br>
-                    <p style="font-size:.7em">
-                        主修高中课程：语，数，英，理综，另外在校期间修习体育课程，是一名体育生
-                    </p>
-                    <span class="time-content-time">
-                        2012.9-2015.6
-                    </span>
-                </div>
-            </div>
-        </div>
-        <!-- 3 -->
-        <div class="time-pic" style="background:rgb(118, 219, 224);top:70vh;">
-            <img src="./src/image/time.png" style="width:100%;height:100%;" alt="">
-        </div>
-        <div class="time-content" style="left:8%;top:70vh;">
-            <div class="time-content-1">
-                <div style="margin:10px;">
-                    <span style="font-size:.9em;">
-                        <b>大学</b>
-                    </span>
-                    <br>
-                    <span style="font-size:.7em;">铜陵职业技术学院（计算机应用技术专业）</span>
-                    <br>
-                    <p style="font-size:.7em">
-                        开设课程有：基于html+css+javascript的前端课程和基于.net平台的c#,asp,sqlserver等后端课程。另外还有相关photoshop,flash,基础算法,计算机硬件方面的知识
-                    </p>
-                    <span class="time-content-time">
-                        2015.9-2018.6
-                    </span>
-                </div>
-            </div>
-        </div>
+    <div id="test" style="width:30px;font-size:20px;text-align:center;margin-left:40%;font-family:黑体">
+        天将降大任于斯人也，必先苦其心志
     </div>
+    <!-- <div style="width:20px;margin-left:50%;font-family:微软雅黑">
+        天将降大任于斯人也，必先苦其心志
+    </div> -->
+    
+    <script>
+        $(function() { 
+            $(function () {
+            $('#test').textillate({ in: { effect: 'bounceIn' } });
+        })
+        })
+    </script>
+    
 </body>
 </html>

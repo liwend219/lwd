@@ -1,4 +1,5 @@
 $(function(){
+    $('.motto').textillate({ in: { effect: 'bounceIn' } });
     $('#content').fullpage({
         navigation:true,
         anchors:["page1","page2","page3","page4","page5"],
@@ -105,6 +106,7 @@ option = {
         {
             type : 'category',
             data : ['html', 'css', 'js', 'vue.js', 'webpack', 'jquery','grunt', 'node'],
+            // data:[{name:'html',max:100},{name:'css',max:100}],
             axisTick: {
                 alignWithLabel: true
             }
@@ -120,7 +122,8 @@ option = {
             name:'掌握程度',
             type:'bar',
             barWidth: '40%',
-            data:[100, 52, 20, 34, 90, 30,40, 20]
+            data:[ 82, 80, 75, 70, 70, 65, 65, 60,],
+            // data:[80,60]
         }
     ]
 };
@@ -158,7 +161,7 @@ option2 = {
         type: 'radar',
         data : [
             {
-                value : [72, 65, 70, 45, 65, 87],
+                value : [72, 65, 70, 45, 65, 80],
                 name : '其他能力'
             },
             

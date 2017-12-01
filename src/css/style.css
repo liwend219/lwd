@@ -53,6 +53,16 @@
     color:#3058bb;
     transition: 300ms;
 }
+.motto {
+    width:30px;
+    font-size:20px;
+    position: absolute;
+    left:20%;
+    top:10vh;
+    color:#fff;
+    text-align:center;
+    font-family:黑体;
+}
 .page1 {
     background-color: #ff8960;
 }
@@ -119,6 +129,7 @@
 }
 .page4 {
     background-color: #90ffdd;
+    /* background-color: #378cad */
 }
 .page4-item {
     display:inline-block;
