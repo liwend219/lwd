@@ -6,29 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <!-- <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script> -->
-    <link href="./bower_components/textillate/assets/animate.css" rel="stylesheet">
-    <script src="./bower_components/textillate/jquery.textillate.js"></script>
-    
-    
-    <script src="./bower_components/textillate/assets/jquery.fittext.js"></script>
-    <script src="./bower_components/textillate/assets/jquery.lettering.js"></script>
+    <script src="./src/js/modernizr.2.5.3.min.js"></script>
 </head>
 <body>
-    <div id="test" style="width:30px;font-size:20px;text-align:center;margin-left:40%;font-family:黑体">
-        天将降大任于斯人也，必先苦其心志
+    <div class="flipbook"> 
+        <div style="background-image:url(pages/1.jpg)"></div> 
+        <div style="background-image:url(pages/2.jpg)"></div> 
+        <div style="background-image:url(pages/3.jpg)"></div> 
     </div>
-    <!-- <div style="width:20px;margin-left:50%;font-family:微软雅黑">
-        天将降大任于斯人也，必先苦其心志
-    </div> -->
-    
     <script>
-        $(function() { 
-            $(function () {
-            $('#test').textillate({ in: { effect: 'bounceIn' } });
-        })
-        })
+        $('.flipbook').turn({ 
+            width: 922, 
+            height: 600, 
+            elevation: 50, 
+            gradients: true, 
+            autoCenter: true 
+        });
+        yepnope({
+            test : Modernizr.csstransforms,
+            yep: ['./src/js/turn.js'],
+            nope: ['./src/js/turn.html4.min.js'],
+            both: ['./src/css/basic.css'],
+            complete: loadApp
+        });
     </script>
-    
 </body>
 </html>

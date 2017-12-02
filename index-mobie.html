@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+    <link rel="stylesheet" href="./src/css/basic.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="./src/js/modernizr.2.5.3.min.js"></script>
     <title>李文东</title>
     <style>
         *{
@@ -11,11 +19,14 @@
             padding:0;
         }
         .page1 {
-            background:url(./src/image/timg7.jpg);
-            background-size: 100% auto;
-            height:100vh;
-            /* padding-top:30px; */
             position:relative;
+            background:url(./src/image/timg7.jpg) center top no-repeat;
+            background-size: 100%;
+            height:100vh;
+            width: 100vw;
+            text-align: center;
+            /* padding-top:30px; */
+            
         }
         .page1-logo {
             height:30vw;
@@ -32,32 +43,311 @@
             position: absolute;
             top:50vw;
             color:#fff;
-            width: 100vw;
+            width: 200px;
             height:30px;
             left:50%;
-            margin-left:-50vw;
+            margin-left:-100px;
         }
         .page1-Motto {
             position: absolute;
+            width:80vw;
+            font-size: 12px;
+            color:rgb(219, 166, 97);
             bottom:20vh;
-            width:100vw;
             left:50%;
-            margin-left:-50vw;
+            margin-left:-40vw;
+        }
+        .page-Prompt {
+            position: absolute;
+            width:80vw;
+            font-size: 12px;
+            color:rgb(128, 112, 123);
+            bottom:8vh;
+            left:50%;
+            margin-left:-40vw;
+        }
+        .page2 {
+            background:url(./src/image/timg4.jpg) center top no-repeat;
+            background-size: 100%;
+            text-align:center;
+            /* height:100%; */
+            /* width:100%; */
+        }
+        .page2-content {
+            margin-top:50px;
+            
+        }
+        .page-title {
+            margin-top:30px;
+            color:rgb(255, 255, 255);
+            /* font-family: 楷体; */
+        }
+        .page2-jn {
+            margin-top: 20px;
+        }
+        .page2-jn-1 {
+            width:80px;
+            text-align: center;
+            line-height: 25px;
+            height:25px;
+            color:#fff;
+            margin: 0 5px;
+            border-radius: 8px;
+            font-size: 14px;
+            display: inline-block;
+        }
+        .paage2-jn-other {
+            width:70vw;
+            /* margin-top:30px; */
+            font-size: 12px;
+            margin: 0 auto;
+        }
+        .page3 {
+            background:url(./src/image/timg8.jpg) center top no-repeat;
+            background-size: 100%;
+            text-align:center;
+            /* height:100%; */
+            /* width:100%; */
+        }
+        .page3-content {
+            height:70vh;
+            overflow:scroll;
+        }
+        .page3-1 {
+            color:rgb(216, 210, 210);
+            font-size: .6em;
+            margin: 10vh auto 10px;
+            width:60vw;
+            border-bottom: 1px solid #ccc;
+        }
+        .page3-js {
+            color:#fff;
+            font-size: .8em;
+            width:70vw;
+            margin: 0 auto;
+        }
+        .page4 {
+            background:url(./src/image/timg9.jpg) center top no-repeat;
+            background-size: 100%;
+            text-align:center;
+            /* height:100%; */
+            /* width:100%; */
+        }
+        .page4-content {
+            width:60vw;
+            height:25vh;
+            margin: 20px auto;
+            padding:10px;
+            background: #fff;
+            border-radius:10px;
+            text-align: center;
+        }
+        .page5 {
+            background: url(./src/image/timg10.jpg) center top no-repeat;
+            background-size: 100%;
+            text-align:center;
+        }
+        .page5-content {
+            color:#fff;
+            margin-top:30px;
+        }
+        .page5-lx {
+            width:100vw;
+            text-align: center;
+            margin-top: 40vh;
+             
         }
     </style>
 </head>
 <body>
-    <div style="text-align:center" class="page1">
-        <div class="page1-logo">
-            <img src="./src/image/logo.jpg" style="width:100%;height:100%;" alt="">
+    
+    <div class="flipbook">
+        <!-- 1 -->
+        <div class="page1">
+            <div class="page1-logo">
+                <img src="./src/image/logo.jpg" style="width:100%;height:100%;" alt="">
+            </div>
+            <div class="page1-introduce">
+                web前端　李文东 <br> <br>
+                <a href="mailto:lwd219@liwend.cn" style="text-decoration:none;color:#94969b">lwd219@liwend.cn</a>
+            </div>
+            
+            <div class="page1-Motto">
+                士不可以不弘毅，任重而道远。
+            </div>
+            <div class="page-Prompt">
+                ◁上下边角滑动翻页▷
+            </div>
         </div>
-        <div class="page1-introduce">
-            web前端　李文东 <br> <br>
-            <a href="mailto:lwd219@liwend.cn" style="text-decoration:none;color:#94969b">lwd219@liwend.cn</a>
+        <!-- 2 -->
+        <div class="page2">
+            <h3 class="page-title">技能掌握</h3>
+            <div class="page2-content" style="text-align:center">
+                <div class="page2-jn">
+                    <div class="page2-jn-1" style="background:#725d79">html</div> 
+                </div>
+                <div class="page2-jn">
+                    <div class="page2-jn-1" style="background:#4a9fb9">css</div>
+                    <div class="page2-jn-1" style="background:#c6e651">js</div>
+                </div>
+                <div class="page2-jn">
+                    <div class="page2-jn-1" style="background:#2d2652">vue</div>
+                    <div class="page2-jn-1" style="background:#74e651">webpack</div>
+                    <div class="page2-jn-1" style="background:#e6a551">grunt</div>
+                </div>
+                <div class="page2-jn">
+                    <div class="page2-jn-1" style="background:#51e6e6">jquery</div>
+                    <div class="page2-jn-1" style="background:#24121f">node</div>
+                </div>
+                <div class="page2-jn">
+                    <div class="page2-jn-1" style="background:#c95798">java</div>
+                </div>
+                <br>
+                <br>
+                <div class="paage2-jn-other">
+                    另外，现在对react native，weex，小程序等比较感兴趣，准备下一阶段学习这方面的知识。
+                </div>
+            </div>
+            <div class="page-Prompt">
+                ◁上下边角滑动翻页▷
+            </div>
         </div>
-        <div class="page1-Motto">
-            士不可以不弘毅，任重而道远。
+        <div class="page3">
+            <h3 class="page-title">教育经历</h3>
+            <div class="page3-content">
+                <div>
+                    <div class="page3-1">
+                        岳西县白帽初级中学<br>
+                        2009.9-2012.6
+                    </div>
+                    <div class="page3-js">
+                        主修初中课程
+                    </div>
+                </div>
+                <div>
+                    <div class="page3-1">
+                        岳西县店前中学<br>
+                        2012.9-2015.6
+                    </div>
+                    <div class="page3-js">
+                        主修高中课程：语，数，英，理综。
+                    </div>
+                </div>
+                <div>
+                    <div class="page3-1">
+                        铜陵职业技术学院（计算机应用技术）<br>
+                        2015.9-2018.6
+                    </div>
+                    <div class="page3-js">
+                        开设课程有：基于html+css+javascript的前端课程和基于.net平台的c#,asp,sqlserver等后端课程。另外还有相关photoshop,flash,基础算法,计算机硬件方面的知识
+                    </div>
+                </div>
+            </div>
+            <div class="page-Prompt">
+                ◁上下边角滑动翻页▷
+            </div>
+        </div>
+        <div class="page4">
+            <h3 class="page-title">工作经历</h3>
+            <div>
+                <div class="page4-content">
+                    <div style="font-size:.6em;">上海保挣网络科技有限公司</div>
+                    <span style="font-size:.5em;color:rgb(104, 94, 94);">2017.5-2017.11</span><br>
+                    <span style="font-size:.5em;color:rgb(104, 94, 94);">公司业务：线上保险<br>我的责任：1.根据设计稿和文案，写出前端界面。2.保证网页正常运行，按需求修改页面。3.排除bug，编写相关技术文档。</span>
+                </div>
+                <div class="page4-content">
+                    <div style="font-size:.6em;">...</div>
+                    <span style="font-size:.5em;color:rgb(104, 94, 94);">快把我收到碗里去</span><br>
+                    <span style="font-size:.5em;color:rgb(104, 94, 94);">注：项目经验请在电脑端查看</span>
+                </div>
+            </div>
+            <div class="page-Prompt">
+                ◁上下边角滑动翻页▷
+            </div>
+        </div>
+        <div class="page5">
+            <h3 class="page-title">更多</h3>
+            <div class="page5-content">
+                <div class="page5-title">欢迎联系我</div>
+                <div style="margin-top:30px;margin:30px auto 0px">
+                    ↓
+                </div>
+                <div class="page5-lx">
+                    <img onclick="opengithub()" src="./src/image/github.png" style="width:12vw;height:12vw;" alt="">
+                    <img onclick="openmail()" src="./src/image/mail.png" style="width:12vw;height:12vw;" alt="">
+                    <img onclick="openweibo()" src="./src/image/weibo.png" style="width:12vw;height:12vw;" alt="">
+                    <img onclick="openzhihu()" src="./src/image/zhihu.png" style="width:12vw;height:12vw;" alt="">
+                </div>
+            </div>
+            <div class="page-Prompt">
+                ◁上下边角滑动翻页▷
+            </div>
         </div>
     </div>
+    <script type="text/javascript">
+        function opengithub () {
+            window.open("https://github.com/liwend219")
+        }
+        function openmail () {
+            window.open("mailto:987671764@qq.com")
+        }
+        function openweibo () {
+            
+            window.open("https://weibo.com/u/5128147886")
+        }
+        function openzhihu () {
+            window.open("https://www.zhihu.com/people/li-wen-dong-63/activities")
+        }
+        var iheight = $(window).height()
+        var iwidth = $(window).width()
+        $('.flipboox').width(iwidth).height(iheight);
+        $(window).resize(function () {
+            iwidth = $(window).width();
+            iheight = $(window).height();
+            $('.flipboox').width(iwidth).height(iheight);
+        });
+        // $('.shade').hide();
+        function loadApp() {
+        
+            // Create the flipbook
+        
+            $('.flipbook').turn({
+                    // Width
+        
+                    width:iwidth,
+                    
+                    // Height
+        
+                    height:iheight,
+        
+                    // Elevation
+        
+                    elevation: 50,
+
+                    display: 'single',
+                    
+                    // Enable gradients
+        
+                    gradients: true,
+                    
+                    // Auto center this flipbook
+        
+                    autoCenter: true,
+
+        
+            });
+        }
+        
+        // Load the HTML4 version if there's not CSS transform
+        
+        yepnope({
+            test : Modernizr.csstransforms,
+            yep: ['./src/js/turn.js'],
+            nope: ['./src/js/turn.html4.min.js'],
+            both: ['./src/css/basic.css'],
+            complete: loadApp
+        });
+        
+    </script>
 </body>
 </html>
